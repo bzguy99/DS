@@ -1,3 +1,4 @@
+#### Task1 : Question # 2
 #Write a program which will find all such numbers which are divisible by 7 but are not a multiple
 #of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a
 #comma-separated sequence on a single line.
@@ -30,3 +31,55 @@ for i in range(2000,3201):
 
 for j in result:
     print(str(j)+",", end="")
+    
+#### Task1 : Question # 3
+#Write a Python program to accept the user's first and last name and then getting them printed in
+#the the reverse order with a space between first name and last name.
+
+#Solution
+#--------
+fname = input('Please enter your first name: ')
+lname = input('Please enter your last name: ')
+print(lname[::-1]+' '+fname[::-1])
+
+#### Task1 : Question # 4
+#Write a Python program to find the volume of a sphere with diameter 12 cm.
+#Formula: V=4/3 * π * r 3
+
+import math
+d = 12
+V = 4/3 * math.pi * (d/2)**3
+print(V)
+
+#### Task2 : Question # 1
+#Write a program which accepts a sequence of comma-separated numbers from console and
+#generate a list.
+
+#Solution
+#--------
+num = input('Enter comma separated numbers: ')
+result = num.split(',')
+print(result)
+
+#### Task2 : Question # 2
+#Create the below pattern using nested for loop in Python.
+
+#Solution
+#--------
+for i in range(2,11): # 9 lines
+    if i <= 6: # increasing
+        for y in range(1,i):
+            print('*', end="")
+    elif i <= 11: # decreasing
+        for y in range(1,12-i):
+            print('*', end="")
+    print()
+    
+#### Task2 : Question # 3
+#Write a Python program to reverse a word after accepting the input from the user.
+  
+#Solution
+#--------
+i = input('Please enter a string: ')
+print(i[::-1])
+
